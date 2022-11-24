@@ -9,3 +9,37 @@ Fira Sans
 Gotu
 
 */
+
+.contact-page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-page h1{
+    position: relative;
+    right: 6%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10vh;
+}
+
+.contact-umbrella{
+    position: absolute;
+    left: 45%;
+    rotate: x 180deg;
+    height: 40vh;
+}
+
+.contact-btn{
+    all: unset;
+    font-family:Helvetica,Arial,sans-serif;
+    background-color:#9A5151;
+    color:#FFFFFF;
+    font-size: 3vh;
+    border-radius: 0.5rem;
+    padding: 0 2rem;
+    height: 8%;
+    cursor: pointer;
+}
