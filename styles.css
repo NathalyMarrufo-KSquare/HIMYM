@@ -9,6 +9,78 @@ Fira Sans
 Gotu
 */
 
+/* ================================= H O M E  P A G E  ================================= */
+
+.bodyConf{
+    background-color: #9D7549;
+    margin: 0 0 0 0px;    
+}
+
+.mainContainer{
+    background-color: white;
+    height: 1800px;
+}
+
+
+
+.bannerLogo{
+    height: 170px;
+    padding-top: 35px;
+    padding-left: 90px;
+    position: absolute;
+}
+
+.bannerCast{
+    width: 100%;
+    height: min-content;    
+    align-self: center;
+}
+
+.butContainer{
+    position: absolute;
+    padding-top: 30%;
+    padding-left: 45%;
+}
+
+.joinBut{
+    padding: 15 40 15 40px;
+    font-size: 20px;
+    background-color: #F9CD48;
+    border-color: #F9CD48;
+    border-radius: 10px;
+}
+
+.navBar{
+    background-color: #9D7549;
+    
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    text-align: justify;
+    display: block; 
+    
+}
+
+.navContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 62%;
+}
+
+.logoDes{
+    height: 70px;
+    margin-left: 75px;
+}
+
+.itemsNav{
+    display: flex;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gotu', sans-serif;
+    align-items: center;
+}
+
 
 /* ================================= E V E N T S  P A G E  ================================= */
 .events-page{
