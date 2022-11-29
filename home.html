@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="home.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +16,45 @@
 <body class="bodyConf">
     <div class="mainContainer">
         <div class="bannerContainer">
-            <img src="C:\Users\natha\Desktop\HIMYM-Develop\met-your-mother-season-text-alphabet-word-logo-transparent-png-1054954.png" alt="" class="bannerLogo">
+            <img src="imgs/met-your-mother-season-text-alphabet-word-logo-transparent-png-1054954.png" alt="" class="bannerLogo">
              <p class="butContainer"><button class="joinBut">Join us!</button></p>
              <img src="https://dg31sz3gwrwan.cloudfront.net/fanart/75760/936855-0-q80.jpg" alt="" class="bannerCast">
            
         </div>
         
 
-        <nav class="navBar">
+        <nav class="navBar" id="navbar">
             <div class="navContent">
-                 <img src="How-I-Met-Your-Mother-Logo.png" alt="" class="logoDes">
+                 <img src="imgs/How-I-Met-Your-Mother-Logo.png" alt="" class="logoDes">
 
-            <li class="itemsNav">
-                <ul>Home</ul>
-                <ul>Event</ul>
-                <ul>Meet the team</ul>
-                <ul>Contact</ul>
-            </li>
+            <ul class="itemsNav"> 
+                <li class="itemLink"><a href="home.html" class="linkDecoration">Home</a></li>
+                <li class="itemLink"><a href="events.html" class="linkDecoration">Event</a></li>
+                <li class="itemLink"><a href="home.html" class="linkDecoration">Meet the team</a></li>
+                <li class="itemLink"><a href="contact.html" class="linkDecoration">Contact</a></li>
+            </ul>
             </div>
            
         </nav>
+
+        <div class="content">
+            <img src="https://images.squarespace-cdn.com/content/v1/54bd7982e4b0685687276b10/1422739113468-GWZ1K65BP8WR5GELUL3J/Ted%27s+with+Lights.jpg?format=2500w" alt="">
+        </div>
     </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 </html>
