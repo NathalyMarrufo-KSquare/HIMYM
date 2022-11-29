@@ -5,10 +5,117 @@
 #6CB5B5
 
 ========= FONTS =========
-Fira Sans
+Fira Sans (google fonts)
+font-family: 'Fira Sans', sans-serif;
 Gotu
 */
 
+/* US6 */
+html {
+  background-color: #f9cd48;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/*Top Main*/
+section.topMain {  
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-self: center;
+  align-items: center;
+  grid-template-rows: auto;
+  padding: 12px;
+}
+
+div.logoSection {
+  padding: 6px 12px 6px 48px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-self:center;
+  align-items: center;
+  grid-template-rows: auto;
+}
+
+label.logo {
+  padding: 0;
+  margin: 0;
+  line-height: 70%;
+}
+
+label.logo {
+  font-size: 2.8rem;
+}
+
+label.l2 {
+  text-align: right;
+}
+
+label.l3 {
+  font-size: 4rem;
+}
+
+p.meetT {
+  font-size: 1.2rem;
+  text-align:justify;
+  margin: 8px;
+  padding: 6px 48px 6px 0;
+}
+
+/* Cards */
+section.bottomMain {
+  background-color: white;
+  padding: 36px 12px 24px 12px;
+}
+
+div.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self:center;
+  align-items: center;
+  grid-template-rows: auto;
+}
+
+img.card-photo {
+  height: 280px;
+}
+
+div.ted, div.barney, div.robin {
+  background-color: #9A5151;
+  border: solid 1px #9A5151;
+  border-radius: 5px;
+  box-shadow: 10px 15px 15px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-self:center;
+  align-items: center;
+  cursor: pointer;
+
+  position: relative;
+  top: 0;
+  transition: background-color 1s box-shadow 1s top ease 1s;
+}
+
+div.ted:hover, div.barney:hover, div.robin:hover {
+  background-color: #9D7549;
+  box-shadow: 10px 15px 15px rgba(157, 116, 73, 0.65);
+  top: -10px;
+}
+
+h4.card-title {
+  padding: 4px;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+p.card-subt {
+  padding: 8px 4px;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+=======
 
 /* ================================= E V E N T S  P A G E  ================================= */
 .events-page{
@@ -135,6 +242,3 @@ Gotu
     background-color:#9A5151;
     box-shadow: none;
 }
-
-
-
