@@ -37,6 +37,12 @@
     border-radius: 10px;
 }
 
+.joinBut:hover{
+    background-color: #cba430;
+    border-color: #000000;
+
+}
+
 .navBar{    
     display: block; 
     position: sticky;
@@ -78,6 +84,7 @@
 
 }
 
+
 .linkDecoration{
     text-decoration: none;
     color: white;
@@ -115,8 +122,48 @@
     
     color: #F9D444;
     
-    border: 1px solid rgba(0, 0, 0, 0.7);
     text-shadow: 0px 4px 4px #000000;
 }
 
 
+.eventInfo{
+position: absolute;
+margin-top: 450px;
+margin-left: 15%;
+width: 100%;
+}
+
+.textContent{
+    display: flex;
+    align-items: center;
+    font-family: 'Gotu';
+
+
+}
+
+.labelText{
+    font-size: 25px;
+    width: 200px;
+}
+
+.infoText{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.registerButton{
+    background-color: #6CB5B5;
+    margin-left: 300px;
+    padding: 20 40 20 40px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.25));
+    border-style: none;
+    font-family: 'Gotu';
+    letter-spacing: -0.015em;
+
+}
+.registerButton:hover{
+    background-color: #4d7d7d;
+}
