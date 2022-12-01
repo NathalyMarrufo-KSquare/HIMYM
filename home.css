@@ -5,9 +5,23 @@
     margin: 0 0 0 0px;    
 }
 
+.fadeTop {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    background-color: #9D7549;
+  }
+
 .mainContainer{
     background-color: white;
-    height: 1700px;
+    height: 1800px;
+    margin-top: -80;
+
 }
 
 .bannerLogo{
@@ -51,11 +65,8 @@
 
 
 .navBar{    
-    display: block; 
     position: sticky;
     top: 0px;
-    background-color: #9D7549;
-    height: 80px;
     width: 100%;
     align-items: center;
     text-align: justify;
@@ -98,6 +109,7 @@
     align-items: center;
     align-self: center;
     align-content: center;
+
 }
 
 /* ================================= E V E N T  I N F O R M A T I O N  ================================= */
@@ -106,6 +118,7 @@
 .eventImage{
     width: 100%;
     position: absolute;
+
 }
 
 .textImg{

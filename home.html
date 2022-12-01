@@ -15,36 +15,36 @@
 
   <title>The Legendary Event</title>
 </head>
-<body>
+<body class="bodyConf">
+  <nav class="navBar fadeTop scroll-content">
+      <div class="navContent">
+        <img src="imgs/How-I-Met-Your-Mother-Logo.png" alt="" class="logoDes">
 
-  <section class="bodyConf">
-    
-    <div class="mainContainer">
-      <div class="bannerContainer">
-        <img src="imgs/met-your-mother-season-text-alphabet-word-logo-transparent-png-1054954.png" alt=""
-        class="bannerLogo">
-        <p class="butContainer"><button class="joinBut">Join us!</button></p>
-        <img src="https://dg31sz3gwrwan.cloudfront.net/fanart/75760/936855-0-q80.jpg" alt="" class="bannerCast">
+        <ul class="itemsNav">
+          <li class="itemLink"><a href="home.html" class="linkDecoration">Home</a></li>
+          <li class="itemLink"><a href="events.html" class="linkDecoration">Event</a></li>
+          <li class="itemLink"><a href="meetTheTeam.html" class="linkDecoration">Meet the team</a></li>
+          <li class="itemLink"><a href="contact.html" class="linkDecoration">Contact</a></li>
+        </ul>
       </div>
-      
-      <nav class="navBar" id="navbar">
-        <div class="navContent">
-          <a href="#">
-            <img src="imgs/How-I-Met-Your-Mother-Logo.png" alt="" class="logoDes">
-          </a>
-          
-          <ul class="itemsNav"> 
-            <li class="itemLink"><a href="#" class="linkDecoration">Home</a></li>
-            <li class="itemLink"><a href="#events" class="linkDecoration">Event</a></li>
-            <li class="itemLink"><a href="#meetTheTeam" class="linkDecoration">Meet the team</a></li>
-            <li class="itemLink"><a href="#contact" class="linkDecoration">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      
-      <div class="content">
-        
-        <img
+
+    </nav>
+  <div class="mainContainer">
+    
+    <div class="bannerContainer">
+      <img src="imgs/met-your-mother-season-text-alphabet-word-logo-transparent-png-1054954.png" alt=""
+        class="bannerLogo">
+      <p class="butContainer"><button class="joinBut">Join us!</button></p>
+      <img src="https://dg31sz3gwrwan.cloudfront.net/fanart/75760/936855-0-q80.jpg" alt="" class="bannerCast">
+
+    </div>
+
+
+  
+
+    <div class="content">
+
+      <img
         src="https://images.squarespace-cdn.com/content/v1/54bd7982e4b0685687276b10/1422739113468-GWZ1K65BP8WR5GELUL3J/Ted%27s+with+Lights.jpg?format=2500w"
         alt="" class="eventImage">
         <div class="textImg">
@@ -181,9 +181,26 @@
   <script src="index.js"></script>
 
   <!-- option 2: Using sound tag, this option can't configurate the volume -->
-  <!-- <audio class="theme" autoplay loop>
+   <audio class="theme" autoplay loop>
     <source src='music/HIMYM_low.mp3'>
-  </audio> -->
+  </audio>
+  <script>
+   window.addEventListener('scroll', function()  {
+  let elements = document.getElementsByClassName('scroll-content');
+  let screenSize = window.innerHeight;
+  
+        for(var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+
+        if(element.getBoundingClientRect().top < screenSize) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+
+      }
+});
+  </script>
 
 </body>
 </html>
