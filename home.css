@@ -7,7 +7,7 @@
 
 .mainContainer{
     background-color: white;
-    height: 1800px;
+    height: 1700px;
 }
 
 .bannerLogo{
@@ -38,10 +38,17 @@
 }
 
 .joinBut:hover{
-    background-color: #cba430;
+    background-color: #f6db88;
     border-color: #000000;
-
 }
+
+.logoDes{
+    height: 70px;
+    margin-left: 75px;
+}
+
+/* ================================= N A V  B A R  ================================= */
+
 
 .navBar{    
     display: block; 
@@ -53,9 +60,7 @@
     align-items: center;
     text-align: justify;
     z-index: 100;
-
 }
-
 
 .navContent{
     display: flex;
@@ -64,10 +69,6 @@
     width: 62%;
 }
 
-.logoDes{
-    height: 70px;
-    margin-left: 75px;
-}
 
 .itemsNav{
     list-style:  none;
@@ -75,19 +76,22 @@
     font-size: 18px;
     font-family: 'Gotu', sans-serif;
     align-items: center;
-    
 }
-
 
 .itemLink{
     margin-left: 50px;
 
 }
 
-
 .linkDecoration{
     text-decoration: none;
     color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .content{
@@ -95,6 +99,9 @@
     align-self: center;
     align-content: center;
 }
+
+/* ================================= E V E N T  I N F O R M A T I O N  ================================= */
+
 
 .eventImage{
     width: 100%;
@@ -127,18 +134,18 @@
 
 
 .eventInfo{
-position: absolute;
-margin-top: 450px;
-margin-left: 15%;
-width: 100%;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 15%;
+    width: fit-content;
 }
 
 .textContent{
     display: flex;
+    width: max-content;
     align-items: center;
     font-family: 'Gotu';
-
-
+    margin-top: 1rem;
 }
 
 .labelText{
@@ -153,7 +160,7 @@ width: 100%;
 
 .registerButton{
     background-color: #6CB5B5;
-    margin-left: 300px;
+    margin-left: 20vw;
     padding: 20 40 20 40px;
     color: white;
     font-size: 15px;
