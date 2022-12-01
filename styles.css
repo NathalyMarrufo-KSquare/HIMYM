@@ -21,12 +21,15 @@ html * {
 }
 
 /* Navbar */
-header {
+/* header {
   background-color: #9D7549;
-}
+} */
+
+/* =================================  M E E T  T H E  T E A M  ================================= */
 
 /* Main Area */
 main.mainArea {
+  margin-top: 1rem;
   background: url(./imgs/yellow.jpeg) no-repeat center;
   background-size:cover;
   background-position: center;
@@ -82,9 +85,7 @@ p.meetT {
   text-shadow: black 3px 0 10px;
 }
 
-/* Cards */
 section.bottomMain {
-  /*background-color: white;*/
   padding: 36px 12px 24px 12px;
 }
 
@@ -136,9 +137,137 @@ p.card-subt {
   color: white;
 }
 
-/* ========= US7 ========= */
 
-/* Footer */
+/* =================================  E V E N T S  P A G E  ================================= */
+
+.events-page{
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.events-page header{
+    background-color: initial;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 7vh;
+    line-height: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 2px 1px #7e7e7e;
+}
+
+.events-list{
+    background-color: #9A5151;
+    color: #FFFFFF;
+    height: 58vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-family: 'Gotu', sans-serif;
+}
+
+.events-list li{
+    list-style: none;
+    text-align: right;
+    padding: 1rem;
+}
+
+.events-btn{
+    align-self: flex-end;
+    background-color: #F9CD48;
+    margin-right: 3rem;
+
+    box-shadow: 3px 3px #2f2f2f;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.events-btn:hover{
+    background-color: #f6da86;
+}
+
+.events-btn:active{
+    background-color:#F9CD48;
+    box-shadow: none;
+}
+
+.events-btn a{
+    font-size: 140%;
+    font-family: Helvetica,Arial,sans-serif;
+    color:#000000;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+
+.legendary{
+    position: relative;
+    right: 15%;
+    bottom: 50%;
+    width: 9vw;
+    z-index: 0;
+}
+
+.group{
+    position: relative;
+    width: 17vw;
+    bottom: 28%;
+}
+
+
+/* ================================= C O N T A C T S  P A G E  ================================= */
+
+.contact-page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-page h1{
+    position: relative;
+    right: 6%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10vh;
+}
+
+.contact-umbrella{
+    position: absolute;
+    left: 46%;
+    rotate: x 180deg;
+    height: 40vh;
+}
+
+.contact-btn{
+    background-color:#9A5151;
+    color:#FFFFFF;
+    padding: 0 2rem;
+
+    font-family: Helvetica,Arial,sans-serif;
+    box-shadow: 3px 3px #2f2f2f;
+    font-size: 3vh;
+    border-radius: 0.5rem;
+    height: 8%;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background-color: #9f6a6a;
+}
+
+.contact-btn:active{
+    background-color:#9A5151;
+    box-shadow: none;
+}
+
+/* =================================  F O O T E R  ================================= */
+
 .footer {
   padding: 40px 240px;
   height: 100px;

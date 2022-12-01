@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
 
 
   <title>The Legendary Event</title>
@@ -45,29 +47,141 @@
       <img
         src="https://images.squarespace-cdn.com/content/v1/54bd7982e4b0685687276b10/1422739113468-GWZ1K65BP8WR5GELUL3J/Ted%27s+with+Lights.jpg?format=2500w"
         alt="" class="eventImage">
-      <div class="textImg">
-        <p class="blur">Get to know us | The Legendary Meet!</p>
-      </div>
-
-      <div class="eventInfo">
-        <div class="textContent">
-          <p class="labelText">Location: </p>
-          <p class="infoText">Los Angeles Convention Center</p>
+        <div class="textImg">
+          <p class="blur">Get to know us | The Legendary Meet!</p>
         </div>
-        <div class="textContent">
-          <p class="labelText">Date of Event: </p>
-          <p class="infoText">December 12, 2022 </p><button class="registerButton">Register now!</button>
+        
+        <div class="eventInfo">
+          <div class="textContent">
+            <p class="labelText">Location: </p>
+            <p class="infoText">Los Angeles Convention Center</p>
+          </div>
+          <div class="textContent">
+            <p class="labelText">Date of Event: </p>
+            <p class="infoText">December 12, 2022 </p><button class="registerButton">Register now!</button>
+          </div>
         </div>
 
       </div>
     </div>
-  </div>
+
+  </section>
+
+  
+  <section class="events-page" id="events">
+    <header> Our <br> Schedule!</header>
+    <article class="events-list">
+        <ul>
+            <li>Opening time &emsp; | &emsp; 11:00</li>
+            <li>Q&A with the cast &emsp; | &emsp; 12:00</li>
+            <li>Behind the scenes highlight &emsp; | &emsp; 14:00</li>
+            <li>Q&A with the creators of the show &emsp; | &emsp; 16:00</li>
+            <li>Reading table of never shown before material &emsp; | &emsp; 17:00</li>
+            <li>Closing ceremony &emsp; | &emsp; 18:00</li>
+        </ul>
+        <button class="events-btn"> <a href="#contact">Join Us!</a></button>
+    </article>
+    <img src="imgs/barney.png" alt="Barney with a quote" class="legendary">
+    <img src="imgs/group.png" alt="Cast group image" class="group">
+</section>
+
+<br>
+
+<main class="mainArea" id="meetTheTeam">
+    <div class="bg-image"></div>
+    <section class="topMain">
+      <div class="logoSection">
+        <label class="logo l1">meet</label>
+        <label class="logo l2">the</label>
+        <label class="logo l3">team</label>
+      </div>
+      <div class="descr">
+        <p class="meetT">Hi, friend! Welcome to our event where you can meet some of the members of this wonderful and
+          fantastic television
+          program. HIMYM staff is waiting for you.</p>
+      </div>
+    </section>
+    <section class="bottomMain">
+      <div class="cards">
+        <div class="ted">
+          <img class="card-photo" alt="ted" src="./imgs/tedM.jpeg" />
+          <div class="card-text">
+            <h4 class="card-title">Ted Mosby</h4>
+            <p class="card-subt">Event Manager</p>
+          </div>
+        </div>
+        <div class="barney">
+          <img class="card-photo" alt="barney" src="./imgs/barneyS.jpeg" />
+          <div class="card-text">
+            <h4 class="card-title">Barney Stinson</h4>
+            <p class="card-subt">Contact</p>
+          </div>
+        </div>
+        <div class="robin">
+          <img class="card-photo" alt="robin" src="./imgs/robinS.jpeg" />
+          <div class="card-text">
+            <h4 class="card-title">Robin Scherbatsky</h4>
+            <p class="card-subt">Sony Executive</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- LINK TO THE FORM https://s69j5am42sf.typeform.com/to/Mhitvdkv -->
+ <section class="contact-page" id="contact">
+    <h1>Got any <br> questions</h1>
+
+    <img class="contact-umbrella" src="imgs/umbrella.png" alt="Yellow umbrella">
+
+    <button class="contact-btn" data-tf-popup="Mhitvdkv" data-tf-iframe-props="title=HIMYM Project ITK" data-tf-medium="snippet">
+        Contact Us!
+    </button>
+ </section>
+
+  <footer>
+    <div class="footer">
+      <div class="line">&nbsp;</div>
+      <div class="sites">
+        <div class="sites-lf">
+          <a class="links" href="#contact">Contact Us</a>
+          <a class="links" href="#contact">You need help?</a>
+        </div>
+        <div class="sites-ct">
+          <a class="links" href="#">
+            <img class="f-logo" src="./imgs/himym.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="sites-rg">
+          <a class="links" href="#">More events comming soon!</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="//embed.typeform.com/next/embed.js"></script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
+
 
   <!-- option 1: Using "mousemove" whe you enter the website -->
-  <!-- <script src="index.js"></script> -->
+  <script src="index.js"></script>
 
   <!-- option 2: Using sound tag, this option can't configurate the volume -->
-  <audio class="theme" autoplay loop>
+   <audio class="theme" autoplay loop>
     <source src='music/HIMYM_low.mp3'>
   </audio>
   <script>
